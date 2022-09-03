@@ -1,0 +1,7 @@
+{% from 'dialogs.html' import dialog %}
+{% import 'dialogs.html' as dlg %}
+{% include 'header.html' %}
+{% include 'header2.html' ignore missing %}
+<p></p>
+{{ dlg.dialog(title='TITLE', msg='Hello, world') }}
+{% include 'footer.html' %}
